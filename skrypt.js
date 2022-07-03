@@ -5,7 +5,7 @@ var blad=0;
 
 function ustaw(nrobrazka)
 {
-	$("#obrazek").html("<img src='img\\s"+nrobrazka+".jpg' />");
+	$("#obrazek").html("<img src='.\\img\\s"+nrobrazka+".jpg' />");
 }
 
 
