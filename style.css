@@ -98,6 +98,7 @@ a.forgotpass:hover
 
 #container
 {
+	margin-top: 30px;
 	color: grey;
 	width: 1000px;
 	height: 500px;
