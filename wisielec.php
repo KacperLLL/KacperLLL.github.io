@@ -1,3 +1,13 @@
+<?php
+	session_start();
+	if(!isset($_SESSION['zalogowany']))
+	{
+		header("Location: index.php");
+		exit();
+	}
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +23,9 @@
 </head>
 <body class="wisielec">
 
+	<a href="wyloguj.php" class="forgotpass" style="color: white;">WYLOGUJ</a><br/><br/>
+	<a href="zalogowany.php" class="forgotpass" style="color: white;">Powrót</a><br/><br/>
+
 	<script src="skrypt.js"></script> 
 
 	<div id="container">
@@ -24,9 +37,6 @@
 
 	</div>
 
-	<div></div>
-
-
 
 </body>
-</html> 
+</html>
