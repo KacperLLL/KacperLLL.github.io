@@ -1,5 +1,7 @@
 var litery = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŹŻ";
-var hasloo = "burza idzie";
+var hasla[4] = ["idzie burza", "dobre pomaranczowe", "testoweh haslo1", "testowe haslo2"];
+
+var hasloo = "";
 var niewidoczne_halso="";
 var blad=0;
 
@@ -11,6 +13,12 @@ function ustaw(nrobrazka)
 
 
 function schow_pass() {
+	var num_hasla = 0;
+
+	num_hasla = Math.floor(Math.random() * 3);
+
+	hasloo = hasla[num_hasla];
+
 	hasloo = hasloo.toUpperCase();
 
 	niewidoczne_halso="";
