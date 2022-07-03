@@ -1,5 +1,5 @@
 var litery = "AĄBCĆDEĘFGHIJKLŁMNŃOÓPQRSŚTUVWXYZŹŻ";
-var hasla = ["idzie burza", "dobre pomaranczowe", "testoweh haslo", "testowe haslo"];
+var hasla = ["idzie burza", "dobre pomaranczowe", "testoweh haslo", "testowe haslo", "nowe haslo"];
 
 var hasloo = "";
 var niewidoczne_halso="";
