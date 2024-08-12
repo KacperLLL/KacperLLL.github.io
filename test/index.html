@@ -1,0 +1,121 @@
+<!---
+    LOGIN DO WITRYNY: admin
+    HASLO DO WITRYNY: Super_Tajne_Haslo
+-->
+
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        body
+        {
+            background-color: #131624;
+        }
+
+        #container
+        {
+            color: rgb(233, 233, 233);
+            font-family: 'Lato', sans-serif;
+            width: 100%;
+        }
+
+        #form
+        {
+            background-color: #181F39;
+            width: 250px;
+            height: 350px;
+            padding: 20px;
+            margin: auto;
+            margin-top: 200px;
+            box-shadow: 10px 10px 10px black;
+
+        }
+
+        a
+        {
+            text-decoration: none;
+            color: rgb(233, 233, 233);
+        }
+
+        a:hover
+        {
+            color: rgb(109, 109, 109);
+        }
+
+        #zaloguj
+        {
+            cursor: pointer;
+            width: 70px;
+            height: 25px;
+            background-color: #4E6084;
+            text-align: center;
+        }
+
+        #zaloguj:hover
+        {
+            color: rgb(109, 109, 109);
+            background-color: #2f3a50;
+        }
+    </style>
+
+</head>
+<body>
+    <script>
+
+        const login = "admin";
+        const haslo = "Super_Tajne_Haslo";
+        $("#document").ready(function()
+        {
+            $("#zaloguj").click(function(){
+                var nlogin = document.getElementById('login').value;
+                var nhaslo = document.getElementById('haslo').value;
+
+                if(nlogin === login)
+                {
+                    if(nhaslo===haslo)
+                    {
+                        alert("Zalogowano!   https://drive.google.com/file/d/1SapZuO1C7WzVxijOMJUkm6q-WsZedPIf/view?usp=sharing");
+                    }   
+                    else
+                    {
+                        alert("Nie udało się zalogować");
+                    }  
+                }
+
+                else
+                {
+                    alert("Nie udało się zalogować");
+                }
+            });
+        });
+
+    </script>
+
+    <div id="container">
+        <div id="form">
+            <div id="aImg"></div>
+            <div id="daneForm">
+                <h1>Zaloguj się!</h1>
+                <h3>Login:</h3>
+                <input type="text" id="login">
+                <h3>Hasło:</h3>
+                <input type="password" id="haslo"><br><br>
+
+                <div id="zaloguj">Zaloguj!</div><br>
+                <a href="https://support.google.com/campaignmanager/answer/2828688?hl=pl" target="_blank">Przywróć hasło<a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
